@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Filter.java to edit this template
  */
-package ar.charlycimino.muestra.servlets.session.login;
+package ar.charlycimino.muestra.servlets.session.login.filters;
 
 import java.io.IOException;
 import jakarta.servlet.Filter;
