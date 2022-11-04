@@ -13,17 +13,19 @@
 </c:if>
 
 <div class="container mt-3">
+    
     <form name="elForm" action="${pageContext.request.contextPath}/login" method="post" >
         <label for="nombre">Usuario:</label> <br>
-        <input type="text" id="nombre" name="nombre" value="homero" placeholder="Probar con bart">
+        <input type="text" id="nombre" name="nombre">
         <br/><br/>
         <label for="pass">Clave: </label> <br>
-        <input type="password" id="pass" name="pass" value="123456">
+        <input type="password" id="pass" name="pass">
         <br/><br/>
         <!-- Se arma un input oculto que va a enviar no solo el user y pass, sino también de dónde viene -->
         <input type="hidden" name="deDondeViene" value="${param.origen}">
         <input type="submit" value="Iniciar sesión">
     </form>
+        <p><small>Los usuarios son 'homero' y 'bart'. Ambos con clave 123456</small></p>
 </div>
 
 <jsp:include page="partes/finHTML.jsp" />
