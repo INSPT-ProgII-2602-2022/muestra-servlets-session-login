@@ -27,7 +27,7 @@ public class LoginServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         // Si viene de un filter, será con una ruta como "/login?origen=/perfil" o "/login?origen=/restringida"
-        String origen = request.getParameter("origen"); // Obtengo el origen
+        //String origen = request.getParameter("origen"); // Obtengo el origen
         //request.setAttribute("deDondeViene", origen); // Lo seteo como valor para poner en el form del .jsp (ir a verlo)
         request.getRequestDispatcher("/WEB-INF/login-page.jsp").forward(request, response);
     }
